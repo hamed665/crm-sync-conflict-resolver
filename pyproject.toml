@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crm-sync-conflict-resolver"
+version = "0.1.0"
+description = "Deterministic three-way CRM merge with explicit conflict review."
+requires-python = ">=3.11"
+authors = [{name = "Hamed Minaei"}]
+license = {text = "MIT"}
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["mergedesk*"]

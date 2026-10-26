@@ -1,0 +1,45 @@
+$ python -m mergedesk
+{
+  "plan": {
+    "record": {
+      "name": "Demo Customer",
+      "phone": "+000-DEMO",
+      "stage": "new"
+    },
+    "conflicts": [
+      {
+        "field": "stage",
+        "base": {
+          "present": true,
+          "value": "new"
+        },
+        "local": {
+          "present": true,
+          "value": "qualified"
+        },
+        "remote": {
+          "present": true,
+          "value": "contacted"
+        }
+      }
+    ],
+    "changes": [
+      {
+        "field": "phone",
+        "reason": "remote_edit",
+        "after": {
+          "present": true,
+          "value": "+000-DEMO"
+        }
+      }
+    ],
+    "base_fingerprint": "77586f76dc7f3210717fb43b0614c225f79df419f8a9f659ab08c2e5e52caeaa",
+    "ready": false
+  },
+  "reviewed": {
+    "name": "Demo Customer",
+    "phone": "+000-DEMO",
+    "stage": "qualified"
+  }
+}
+
